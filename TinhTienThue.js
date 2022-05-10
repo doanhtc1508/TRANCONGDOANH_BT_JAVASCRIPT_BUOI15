@@ -5,8 +5,8 @@ function tinhThue(){
     var thuNhapDongThue = thuNhapChiuThue(thuNhapNam, 4e6 ,tongNguoi , 16e5)  ;
     var thuePhaiDong = tinhThueSuat(thuNhapDongThue ,hoTen,thuNhapNam ,tongNguoi );
     // hiển thị kết quả
-    if (hoTen === "" || thuNhapNam === "" || tongNguoi === ""  ){
-        alert ("vui lòng nhập đủ thông tin")
+    if (hoTen === "" || thuNhapNam === 0 || tongNguoi === 0  ){
+        alert ("Số tiền thu nhập không hợp lệ")
  }else{
     document.getElementById("tienThue").innerHTML = `<p> Name : ${hoTen} </p> <p>Thuế phải đóng : ${thuePhaiDong.toLocaleString()} `
 }

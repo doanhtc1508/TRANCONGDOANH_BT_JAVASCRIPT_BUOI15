@@ -18,8 +18,12 @@ function countElectricity(){
         
     // }
     // B3 : xuất kết quả
-    document.getElementById ("tongTien").innerHTML = `<p>USER: ${name} </p> <p> Tổng số tiền phải trả ${total.toLocaleString()}
-     vnd </p>`
+    if (kw <= 0 || kw === ""){
+        alert("vui lòng nhập số KW")
+    }else {
+        document.getElementById ("tongTien").innerHTML = `<p>USER: ${name} </p> <p> Tổng số tiền phải trả ${total.toLocaleString()}
+         vnd </p>`
+    }
 
     }
     function calculate(kw,kw_50,kw_650,kw_850,kw_1100,kw_1300){
