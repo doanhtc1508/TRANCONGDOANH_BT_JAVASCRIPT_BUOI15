@@ -8,7 +8,7 @@ function tinhThue(){
     if (hoTen === "" || thuNhapNam === "" || tongNguoi === ""  ){
         alert ("vui lòng nhập đủ thông tin")
  }else{
-    document.getElementById("tienThue").innerHTML = `<p> Name : ${hoTen} </p> <p>Thuế phải đóng : ${thuePhaiDong} `
+    document.getElementById("tienThue").innerHTML = `<p> Name : ${hoTen} </p> <p>Thuế phải đóng : ${thuePhaiDong.toLocaleString()} `
 }
 // alert(thuePhaiDong);
 }

@@ -13,12 +13,12 @@
   <body>
       <div class="container">
         <h1 style="color: blue;">bài tập 1:quản lí sinh viên</h1>
-          <div class="row">
+          <div class="row w-50">
               <div class="card " >
                 <h2>Tính Tổng Điểm Thí Sinh</h2>
                 <hr/>
                 <h3>vui Lòng Chọn Khu Vực :</h3>
-                <select  id="khuvuc">
+                <select  id="khuvuc" style="width:20%">
                   <option value="A">khu vực A</option>
                   <option value="B">khu vực B</option>
                   <option value="C">khu vực C</option>
@@ -34,7 +34,7 @@
                 <label for="khuvucX">khu Vực Không Ưu Tiên</label>  -->
                 <br/>
                 <h3>vui lòng chọn đối tượng :</h3>
-                <select id="doituong">
+                <select id="doituong" style="width:20%">
                   <option value="doituong1">Đối tượng 1</option>
                   <option value="doituong2">Đối tượng 2</option>
                   <option value="doituong3">Đối tượng 3</option>
@@ -71,11 +71,11 @@
       </div>
       <br/>
       <br/>
-      <div class="container">
+      <div class=" container">
         <h1 style="color: blue;">bài tập 2: tính tiền điện</h1>
-        <div class="row ">
+        <div class="row w-50 ">
           <div class="card">
-            <label for="text">Tên người dùng :</label>
+            <label for="text" >Tên người dùng :</label>
             <input type="text" name="text" style="width:20%" id="name" >
             <br />
             
@@ -91,7 +91,7 @@
       <!-- bài tập 3 : -->
       <div class="container">
         <h1 style="color: red;">bài tập 3: tính thuế thu nhập cá nhân</h1>
-        <div class="row ">
+        <div class="row w-50">
           <div class="card">
             <label for="text">Tên người dùng :</label>
             <input type="text" name="text" style="width:20%" id="user" >
@@ -110,6 +110,28 @@
           </div>
         </div>
       </div>
+      <!-- bài tập 4 : -->
+      <div class="container">
+        <h1 style="color: red;">bài tập 4: tính tiền cáp</h1>
+        <div class="row w-50">
+          <div class="card">
+            <select  id="loaikhachhang" style="width:30%">
+              <option value="nhaDan">Nhà Dân</option>
+              <option value="doanhNghiep">Doanh Nghiệp</option>
+            </select>
+            <br />
+            <input type="number" id="makhachhang" placeholder="Nhập mã khách hàng" style="width:30%">
+            <br/>
+            <input type="number" id="soketnoi" placeholder="Số kết nối" style="width:30% ;display:none;">
+            <br/>
+            <input type="number" id="sokenhCaoCap" placeholder="Số kênh cao cấp" style="width:30%">
+            <br/>
+             <button style="background-color: blue;width:20%" onclick="tienCap ()" >Tính tiền cáp</button>
+             <p id="tienCap"></p>
+
+          </div>
+        </div>
+      </div>
       
     <!-- Bootstrap JavaScript Libraries -->
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js" integrity="sha384-IQsoLXl5PILFhosVNubq5LC7Qb9DXgDA9i+tQ8Zj3iwWAwPtgFTxbJ8NT4GN1R8p" crossorigin="anonymous"></script>
@@ -117,6 +139,7 @@
     <script src="./QuanLySinhVien.js"></script>
     <script src="./TinhTienDien.js"></script>
     <script src="./TinhTienThue.js"></script>
+    <script src="./TinhTienCap.js"></script>
   </body>
 
 </html>

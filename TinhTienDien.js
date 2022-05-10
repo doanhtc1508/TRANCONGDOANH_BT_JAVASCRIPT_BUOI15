@@ -18,7 +18,7 @@ function countElectricity(){
         
     // }
     // B3 : xuất kết quả
-    document.getElementById ("tongTien").innerHTML = `<p>USER: ${name} </p> <p> Tổng số tiền phải trả ${total}
+    document.getElementById ("tongTien").innerHTML = `<p>USER: ${name} </p> <p> Tổng số tiền phải trả ${total.toLocaleString()}
      vnd </p>`
 
     }
