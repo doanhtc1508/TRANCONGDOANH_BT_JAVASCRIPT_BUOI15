@@ -23,7 +23,7 @@ function khDoanhNghiep() {
     if (khachHang === "loaikhachhang"){
         alert("vui lòng chọn loại khách hàng")
     }else if (khachHang === "doanhNghiep") {
-        document.getElementById("soketnoi").style.display = "block" ;
+        document.getElementById("soketnoi").style.display = "inline-block" ;
     }else{
         document.getElementById("soketnoi").style.display = "none" ;
     }
