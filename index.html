@@ -115,16 +115,18 @@
         <h1 style="color: red;">bài tập 4: tính tiền cáp</h1>
         <div class="row w-50">
           <div class="card">
-            <select  id="loaikhachhang" style="width:30%">
+            <select  id="loaikhachhang" onchange="khDoanhNghiep()" style="width:30%">
+              <option value="loaikhachhang">Chọn loại khách hàng</option>
               <option value="nhaDan">Nhà Dân</option>
               <option value="doanhNghiep">Doanh Nghiệp</option>
             </select>
             <br />
+            
             <input type="number" id="makhachhang" placeholder="Nhập mã khách hàng" style="width:30%">
             <br/>
-            <input type="number" id="soketnoi" placeholder="Số kết nối" style="width:30% ;display:none;">
-            <br/>
             <input type="number" id="sokenhCaoCap" placeholder="Số kênh cao cấp" style="width:30%">
+            <br/>
+            <input type="number" id="soketnoi" placeholder="Số kết nối" style="width:30% ;display:none;">
             <br/>
              <button style="background-color: blue;width:20%" onclick="tienCap ()" >Tính tiền cáp</button>
              <p id="tienCap"></p>
