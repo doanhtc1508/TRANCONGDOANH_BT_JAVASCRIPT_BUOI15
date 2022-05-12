@@ -1,4 +1,5 @@
 function tienCap (){
+    // DOM tới input và lấy giá trị
     var khachHang = document.getElementById ("loaikhachhang").value ;
     var maKhach = +document.getElementById ("makhachhang").value ;
     var ketNoi = + document.getElementById ("soketnoi").value ;
@@ -17,7 +18,7 @@ function tienCap (){
 
 }
 
-// hàm chọn loại khách hàng
+// Hàm chọn loại khách hàng
 function khDoanhNghiep() {
     var khachHang = document.getElementById ("loaikhachhang").value ;
     if (khachHang === "loaikhachhang"){
@@ -28,12 +29,11 @@ function khDoanhNghiep() {
         document.getElementById("soketnoi").style.display = "none" ;
     }
 }
-// hàm tính tiền cáp nhà dân 
+// Hàm tính tiền cáp nhà dân 
 function capNhaDan(soKenh) {
     return 4.5 + 20.5 + soKenh * 7.5;  
-
 }
-// hàm tính tiền cáp doanh nghiệp
+// Hàm tính tiền cáp doanh nghiệp
 function capDoanhNghiep(ketNoi,soKenh){
     var total = 0 ;
     if (ketNoi <= 10){

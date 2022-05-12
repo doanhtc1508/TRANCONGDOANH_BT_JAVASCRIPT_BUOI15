@@ -24,7 +24,7 @@ function checkArea(diemKhuVuc){
         return 0;   
    }
 }
-// hàm kiểm tra đối tượng
+// Hàm kiểm tra đối tượng
 function checkSubject(diemDoiTuong){
    switch (diemDoiTuong) {
         case "doituong1" :
@@ -37,20 +37,20 @@ function checkSubject(diemDoiTuong){
         return 0 ;
    }
 }
-// hàm tính tổng điểm 3 môn
+// Hàm tính tổng điểm 3 môn
 function aulculatePoint(mon1,mon2,mon3) {
     return mon1 + mon2 + mon3 ;
 }
-// hàm hiển thị kết quả 
+// Hàm hiển thị kết quả 
 function hienThiKetQua (mon1,mon2,mon3,diemTongKet,diemChuan){
     if(!mon1 || !mon2 || !mon3){
         document.getElementById ("ketQua").style.color = "red"
-        document.getElementById ("ketQua").innerHTML = "Bạn đã thi trượt vì có 1 môn 0 điểm"
+        document.getElementById ("ketQua").innerHTML = "Bạn đã trượt vì có 1 môn 0 điểm"
     }else if (diemTongKet >= diemChuan ) {
         document.getElementById ("ketQua").style.color = "blue"
-        document.getElementById ("ketQua").innerHTML = `Bạn đã thi đậu với tổng điểm ${diemTongKet}`
+        document.getElementById ("ketQua").innerHTML = `Bạn đã đậu với tổng điểm ${diemTongKet}`
     }else {
         document.getElementById ("ketQua").style.color = "red"
-        document.getElementById ("ketQua").innerHTML = `Bạn đã thi rớt với tổng điểm ${diemTongKet}`
+        document.getElementById ("ketQua").innerHTML = `Bạn đã rớt với tổng điểm ${diemTongKet}`
     }
 }

@@ -1,4 +1,5 @@
 function tinhThue(){
+   // DOM tới input và lấy giá trị
     var hoTen = document.getElementById ("user").value ;
     var thuNhapNam = +document.getElementById ("tongThuNhap").value ;
     var tongNguoi = +document.getElementById ("soNguoi").value ;
@@ -8,16 +9,16 @@ function tinhThue(){
     if (hoTen === "" || thuNhapNam === 0 || tongNguoi === 0  ){
         alert ("Số tiền thu nhập không hợp lệ")
  }else{
-    document.getElementById("tienThue").innerHTML = `<p> Name : ${hoTen} </p> <p>Thuế phải đóng : ${thuePhaiDong.toLocaleString()} `
+    document.getElementById("tienThue").innerHTML = `<p> Name : ${hoTen} </p> <p>Thuế phải đóng : ${thuePhaiDong.toLocaleString()} VND`
 }
 // alert(thuePhaiDong);
 }
-// tính thu nhập chịu thuế
+//Hàm tính thu nhập chịu thuế
 function thuNhapChiuThue (thuNhapNam,luongCoBan,tongNguoi,thueThang){
     return thuNhapNam - luongCoBan - tongNguoi * thueThang ; 
 }
-// tính toán thu nhập chịu thuế 
-function tinhThueSuat(thuNhapDongThue ,hoTen,thuNhapNam ,tongNguoi ){
+//Hàm tính toán thu nhập chịu thuế 
+function tinhThueSuat(thuNhapDongThue ){
  var tienThue = 0 ;
  
   if (thuNhapDongThue <= 60e6) {
